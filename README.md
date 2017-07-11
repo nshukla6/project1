@@ -1,2 +1,2 @@
-# project1
-project1
+# Lunch Checker
+Enter the comma separated lunch items , it will show you the options
