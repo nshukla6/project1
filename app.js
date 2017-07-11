@@ -9,6 +9,7 @@
       var lunchItemCount=0;
       if(lunchItems===undefined || lunchItems===null){
         $scope.msg='Please enter data first';
+        $scope.noticeType='danger';
         return;
       }
       lunchItems=lunchItems.split(',')
@@ -17,13 +18,14 @@
       });
       if(lunchItemCount<=3){
         $scope.msg="Enjoy!";
-
+        $scope.noticeType='success';
       }
       else{
         $scope.msg="Too much!";
+        $scope.noticeType='warning'
       }
       $scope.lunchItems=null;
-      
+
     }
 
   }])
