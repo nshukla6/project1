@@ -9,6 +9,7 @@
   </head>
   <body>
     <div ng-controller="LunchCheckController">
+      <h1>Lunch Items</h1>
       <div class="form-group">
         <input type="text" ng-model="lunchItems" class="form-control"
          placeholder="Enter comma separated lunch options">
@@ -17,7 +18,7 @@
         <button class="btn btn-success" ng-click="onSubmit()">Check If Too Much</button>
       </div>
 
-      <div class="form-group msg alert alert-{{noticeType}}">
+      <div class="alert alert-{{noticeType}}">
         {{msg}}
       </div>
     </div>
